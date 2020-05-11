@@ -10,3 +10,15 @@ class Wolf(var hunger: Int = 50) {
         }
     }
 }
+
+class MyWolf {
+    var wolf: Wolf? = Wolf()
+
+    fun myFunciton() {
+        wolf?.eat()
+    }
+
+    fun getAlphaWolf() : Wolf? {
+        return Wolf()
+    }
+}
