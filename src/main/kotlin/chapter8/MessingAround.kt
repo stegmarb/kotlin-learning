@@ -9,7 +9,7 @@ fun main() {
     w2?.let {
         println(it.hunger)
     }
-    var array: Array<String?> = arrayOf("One", "Two", null)
+    val array: Array<String?> = arrayOf("One", "Two", null)
     for (item in array) {
         item?.let {
             println(it)
