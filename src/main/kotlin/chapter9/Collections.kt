@@ -8,6 +8,7 @@ fun main() {
 
 fun list() {
     var list = listOf<String?>("1", "2", "3")
+    val map = mutableMapOf<Int, MutableList<String>>()
     if (list.isNotEmpty()) {
         println(list[0])
     }

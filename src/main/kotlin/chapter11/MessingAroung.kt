@@ -24,6 +24,16 @@ fun main() {
 
     val wolf: Wolf? = null
     wolf?.let { println(it.hunger) }
+    wolf?.hunger?.dec()
+
+    val items = listOf(1,2,3,4,5)
+
+    val combine: String.(Int) -> String = { times ->  this.repeat(times) }
+    val resu = combine.invoke("hello", 3)
+    println(resu)
+
+    val sum: (Int) -> Unit = { println()}
+
 }
 
 typealias DoubleConversion = (Double) -> Double

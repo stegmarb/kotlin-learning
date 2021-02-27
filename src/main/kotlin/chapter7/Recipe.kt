@@ -8,7 +8,7 @@ data class Recipe (val title: String = "",
 
 class Mushrooms (val size: Int, val isMagic: Boolean) {
     constructor(isMagic_param: Boolean) : this(0, isMagic_param) {
-
+        findRecipe()
     }
 }
 
